@@ -1,0 +1,563 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera aplicación móvil</title>
+
+<!--grupo CSS-->
+  <link rel="stylesheet" href="css/tamaf-app11.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.is"></script>
+  <script src="phonegap.js"></script>
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  
+    <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/3.jpg','imagenes/7.jpg','imagenes/9.jpg','imagenes/5.jpg','imagenes/11.jpg','imagenes/13.png','imagenes/27.jpeg','imagenes/5.png','imagenes/9.png','imagenes/8.png')">
+
+   <div data-role="page" id="Principal" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"      data-back-btn-theme="b">
+        <h1><center>Carreras Universitarias</center></h1>
+      </div>
+      <div data-role="main" class="ui-content"> 
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Imagen</h1>
+          <div><img src="imagenes/1.png" width="45%" height="21%"></div>
+        </div>
+     </div>
+       <div>
+       <ul data-role="listview"  data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child  ui-last-child">
+         <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Licenciatura en Gastronomia </h2>
+            <p> se muestra la informacion sobre esta carrera</p>
+         </a>
+         </li>
+       
+          <li class="ui-first-child ui-last-child">
+           <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Licenciatura en Gestion Turistica</h2>
+             <p>se mustra la informacion sobre esta crrera</p>
+           </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+          <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Licenciatura en Derecho</h2>
+             <p>se muestra la informacion sobre esta carrera</p>
+          </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+          <a href="#pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Otras carreras</h2>
+             <p>se muestra mas carrera</p>
+          </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+          <a href="#pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>universidades</h2>
+             <p>muestra universides de diferentes paises </p>
+          </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+          <a href="#pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>datos del desarrollador</h2>
+             <p>informacion del creador de la pagina</p>
+          </a>
+          </li>
+         </ul>  
+         
+     </div>
+     <div data-role="main" class="ui-content"> 
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>Carreras </h1>
+          <div>
+          <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/2.png" alt="2" title="2" id="wows1_0"/></li>
+		<li><img src="data1/images/3.png" alt="3" title="3" id="wows1_1"/></li>
+		<li><img src="data1/images/4.png" alt="4" title="4" id="wows1_2"/></li>
+		<li><img src="data1/images/5.png" alt="5" title="5" id="wows1_3"/></li>
+		<li><img src="data1/images/6.png" alt="6" title="6" id="wows1_4"/></li>
+		<li><img src="data1/images/8.png" alt="8" title="8" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/10.png" alt="wowslider.net" title="10" id="wows1_6"/></a></li>
+		<li><img src="data1/images/12.png" alt="12" title="12" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="2"><span><img src="data1/tooltips/2.png" alt="2"/>1</span></a>
+		<a href="#" title="3"><span><img src="data1/tooltips/3.png" alt="3"/>2</span></a>
+		<a href="#" title="4"><span><img src="data1/tooltips/4.png" alt="4"/>3</span></a>
+		<a href="#" title="5"><span><img src="data1/tooltips/5.png" alt="5"/>4</span></a>
+		<a href="#" title="6"><span><img src="data1/tooltips/6.png" alt="6"/>5</span></a>
+		<a href="#" title="8"><span><img src="data1/tooltips/8.png" alt="8"/>6</span></a>
+		<a href="#" title="10"><span><img src="data1/tooltips/10.png" alt="10"/>7</span></a>
+		<a href="#" title="12"><span><img src="data1/tooltips/12.png" alt="12"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+        </div>
+       </div>
+     </div> 
+       
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <div>
+           <img src="res/android/mdpi.png" width="46" height="46">
+        </div>
+        <div>
+           <h4>Guia de carreras</h4>
+           <H4> Jaqueline Henández Romero </H4>
+        </div>
+      </div>
+</div>
+<div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-add-back-btn-theme="b">
+           <h1>Licenciatura en Gastronomía</h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+          <h2>¿Qué es la licenciatura en gastronomia?</h2>
+    <h4>La gastronomía (del griego γαστρονομία [gastronomía]) es el estudio de la relación del ser humano con su alimentación y su medio ambiente o entorno. El gastrónomo es el profesional que se encarga de este arte. A menudo se piensa erróneamente que el término gastronomía únicamente tiene relación con el arte culinario y la cubertería en torno a una mesa. Sin embargo, ésta es una pequeña parte del campo de estudio de dicha disciplina: no siempre se puede afirmar que un cocinero es un gastrónomo. La gastronomía estudia varios componentes culturales tomando como eje central la comida.</h4>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/3.png',1)"><img src="imagenes/2.png" width="285" height="120" id="Image3"></a></p>
+    
+    <div data-role="main" class="ui-content" align="center">
+<div style="width:50%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://udes.edu.mx/nuestra-oferta/licenciaturas/?gclid=CKa3q5KWmNQCFRC5wAodo6cILw" data-role="button">
+<h2>Universidad</h2>
+</a>
+</li>
+<BR>
+<BR>
+<BR>
+<li class="ui-first-child ui-last-child">
+<a href="http://www.capitaljovenisic.org.mx/blog/post/%C2%BFquieres-ser-chef-conoce-estas-cinco-escuelas/215" data-role="button" >
+<h2>Mejores Universidaes</h2>
+</a>
+</li>
+<BR>
+<BR>
+<BR>
+<li class="ui-first-child ui-last-child">
+<a href="http://www.cursosycarreras.com.mx/gastronomia-puebla-CZ-85-8926" data-role="button" >
+<h2>UNIVERSIDAES EN PUEBLA</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<h1> Perfil de Egreso </h1>
+<p>El alumno egresado de la Licenciatura en Gastronomía además  de tener los conocimientos, tendrá las habilidades, fortalezas, destrezas,  valores, actitudes&nbsp; para ser un&nbsp; profesional de alto rendimiento  capaz de desarrollarse en cualquier campo laboral.</p>
+<p>VALORES</p>
+<p>Honestidad:&nbsp;En la actuación personal y en       el&nbsp; desarrollo de sus actividades laborales.</p>
+<p>Lealtad:&nbsp;A su&nbsp; trabajo, empresa o       complejo en el que se desarrolle;&nbsp; obteniendo con ello un amplio       sentido de pertenencia.<br>
+  ACTITUDES: </p>
+<p>De ética y compromiso en el ámbito gastronómico.</p>
+<p>De respeto y empatía hacia el trabajo&nbsp;       individual. <br>
+</p>
+<p>ADQUIRIRA CONOCIMIENTOS DE:</p>
+<p>Del manejo de equipos de cocina,&nbsp; desde la       de un restaurante tradicional, hasta las cocinas de algún hospital o       empresas.</p>
+<p>La prevención, planeación, organización,       integración, dirección y control de los diferentes tipos de restaurantes y       del personal que labora en los mismos.</p>
+<p>TENDRA LAS HABILIDADES PARA:</p>
+<p>Desarrollar el aprendizaje adquirido en la       preparación, presentación y evaluación de alimentos ya sean estos para       establecimientos comerciales, particulares y turísticos.</p>
+<p>Ser un emprendedor, dando origen a su propio       negocio de gastronomía, pudiendo manejarlo, operarlo y llevarlo al éxito.</p>
+<p><br>
+  FORTALEZAS:</p>
+<p>Tiene los conocimientos necesarios del área       administrativa.</p>
+<p>Tiene los conocimientos necesarios del área       contable y financiera.<br>
+  DESTREZAS: </p>
+<p>Elaborar alimentos de toda índole, valiéndose       de sus recursos disponibles.</p>
+<p>Crear recetas y platillos en base a los       conocimientos adquiridos.</p>
+<p>CAMPO OCUPACIONAL <br>
+  El egresado en la Licenciatura de Gastronomía podrá  desarrollarse en los siguientes campos de acción:</p>
+<p>En la planeación,&nbsp; promoción y       organización de restaurantes y centros gastronómicos.</p>
+<p>En el establecimiento y creación de       restaurantes y centros gastronómicos.</p>
+</div>
+<div>
+<h1>Plan de estudios</h1>
+<p>El plan de estudios está  compuesto por materias prácticas dictadas en el Colegio de Gastronomía Gato  Dumas y asignaturas teóricas en la Universidad de Palermo.</p>
+<p>La carrera tiene una duración  de 4 años y forma profesionales para:</p>
+<p>- Crear y gestionar su propio  emprendimiento gastronómico.</p>
+<p>- Gerenciar restaurantes,  bodegas, cadenas gourmet, hoteles, estancias, franquicias, empresas de catering  y eventos.</p>
+<p>- Interpretar diversos  escenarios de mercados y transformarlos en oportunidades de negocios.</p>
+<p><img src="imagenes/23.jpg" width="636" height="577" alt="ima1"></p>
+
+</div>
+
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Imagen</h1>
+          <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','imagenes/5.png',1)"><img src="imagenes/4.png" width="283" height="153" id="Image46"></a></div>
+        </div></div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Guia de carreras</h4>
+         <h4>Jaqueline Henández Romero </h4>
+      </div>
+</div>
+      </div>
+     
+   
+  
+<div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-add-back-btn-theme="b">
+           <h1>Licencitura en Gestion Turistica</h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+          <h2>¿Qué es la licenciatura en Gestion Turistica?</h2>
+          <p>El  egresado de la Licenciatura en Gestión y Desarrollo Turístico será capaz de:<br>
+            Dirigir  empresas y organismos turísticos a través del diseño de estrategias, procesos,  optimización de recursos  y cumplimiento  de objetivos  para contribuir al  desarrollo y competitividad de la industria turística.<br>
+            Estructurar  planes estratégicos en empresas y organismos turísticos alineados a la  filosofía organizacional y con base en los recursos existentes para contribuir  a la rentabilidad de la empresa.<br>
+           Administrar  la operación de los servicios turísticos mediante la implementación de procesos  y estándares de calidad para contribuir al cumplimiento de las metas  organizacionales.</p>
+          <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/7.png',1)"><img src="imagenes/6.png" width="264" height="137" id="Image4"></a></p>
+         </div>
+         <div data-role="main" class="ui-content" align="center">
+<div style="width:50%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.cncivirtual.com/?gclid=CJuu1JOWmNQCFRi1wAodpksF0w" data-role="button">
+<h2>Universidad</h2>
+</a>
+</li>
+<BR>
+<BR>
+<BR>
+<li class="ui-first-child ui-last-child">
+<a href="http://www.entornoturistico.com/las-mejores-universidades-mexico-estudiar-turismo/" data-role="button" >
+<h2>Mejores Universidaes</h2>
+</a>
+</li>
+<BR>
+<BR>
+<BR>
+<li class="ui-first-child ui-last-child">
+<a href="http://www.cursosycarreras.com.mx/turismo-puebla-CZ-88-8926" data-role="button" >
+<h2>UNIVERSIDAES EN PUEBLA</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<h1> Perfil de Egeso</h1>
+<p>Perfil de Egeso</p>
+<p>Al terminar la carrera, el alumno habrá adquirido los  conocimientos teóricos y prácticos para administrar y diseñar planes  estratégicos y de comercialización que permitirán aumentar la competitividad de  las organizaciones de índole privada o gubernamental pertenecientes al sector  turístico.</p>
+<p>Se distinguirá por su formación ética y humanista, por  ejercer un liderazgo proactivo en la solución de problemas y toma de  decisiones, por estar comprometido con el desarrollo sustentable y con la  calidad en el servicio.</p>
+<p>Asimismo, el alumno habrá desarrollado los siguientes  conocimientos, habilidades y actitudes. </p>
+<p>Conocimientos</p>
+<p>Sobre gestión de empresas relacionadas con el turismo.<br>
+  Sobre investigación de mercados y análisis del  consumidor.<br>
+  Sobre mercadotecnia de servicios turísticos.</p>
+<p>Habilidades</p>
+<p>De adaptación al cambio y a diferentes culturas.<br>
+  De establecer vínculos entre los diferentes actores del  turismo.<br>
+  De innovar en los procesos de servicio al cliente.</p>
+<p>Actitudes</p>
+<p>Servicio a la comunidad promoviendo las áreas turísticas  dentro y fuera del país.<br>
+  Responsabilidad social por un turismo sostenible.<br>
+  Ética en su desempeño profesional.</p>
+</div>
+<div>
+  <h1>Plan de Estudios </h1>
+<img src="imagenes/24.png" width="379" height="733"> </div>
+<div data-role="collapsible" data-content-theme="false">
+        <h1>Imagen</h1>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image47','','imagenes/8.png',1)"><img src="imagenes/9.png" width="250" height="139" id="Image47"></a>
+  </div></div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Guia de carreras</h4>
+         <h4>Jaqueline Henández Romero </h4>
+      </div>
+</div>
+</div>
+    
+<div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-add-back-btn-theme="b">
+           <h1>Licenciatura en Derecho</h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+          <h2>¿Qué es la Licencitura en Derecho?</h2>
+          <p>Licenciatura en Derecho, licenciatura en leyes o licenciatura en ciencias jurídicas es el grado académico que se confiere a quienes han concluido exitosamente un proceso de estudios de Derecho en una universidad o institución de estudios superiores. El título profesional que se confiere al licenciado en Derecho que cumple los demás requisitos legales es el de abogado.</p>
+          <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/11.png',1)"><img src="imagenes/10.png" width="413" height="196" id="Image7"></a></p>
+         </div>
+         <div>
+         <h1>Perfil de Egreso </h1>
+         <p>Podrá relacionar el Derecho con otras  Ciencias Sociales para resolver problemas de la sociedad contemporánea en el  ámbito Nacional e Internacional que permitan precisar el sentido en que debe  configurarse la norma jurídica.<br>
+           Ejercerá su labor con profesionalismo,  ética y responsabilidad.<br>
+           Tendrá una sólida formación jurídica,  que le permita comprender la organización de la sociedad mexicana.<br>
+           Adquirirá una visión legal de la  comunidad internacional y de los principios que rigen las relaciones entre los  países.<br>
+           Conocerá la organización del Estado y  las normas legales que regulan la administración pública.<br>
+           Conocerá la historia del derecho  mexicano y de sus instituciones jurídicas.<br>
+           Aplicará en la Judicatura, el foro, la  función pública y en cualquier ámbito del ejercicio de su profesión, la más  avanzada tecnología en informática.<br>
+           Podrá detectar conflictos de interés,  reconocer las dimensiones morales de los problemas y entender la demanda social  por transparencia en el ejercicio de la abogacía.<br>
+           Será capaz de aplicarlo en la  satisfacción de necesidades de su entorno y asumirá frente a él una actitud  crítica y creativa en el marco del estado de Derecho, con responsabilidad  social y ética profesional.<br>
+           Aplicar el derecho en forma correcta y  justa, en la solución de cualquier controversia jurídica.<br>
+           Elaborar contratos, convenios,  constitución de sociedades o cualquier otro acto jurídico similar.<br>
+           Comprender el entorno en donde  desarrollará sus habilidades, así como los recursos y necesidades.<br>
+           Colaborar como miembro o líder en  equipos multidisciplinarios y multiculturales.<br>
+           Tomar decisiones, ejercer y delegar  autoridad, dirigir con liderazgo, promover el desarrollo organizacional y la  calidad de vida en el trabajo e investigar y diseñar creativamente propuestas  para la solución de problemas.<br>
+           Capacitado para resolver problemas  jurídicos con eficiencia, eficacia y oportunidad.<br>
+           Juicio crítico basado en la observación  científica de la realidad.<br>
+           Capacidad de argumentación e  interpretación jurídica.<br>
+           Manejar casos civiles, penales,  administrativos y de cualquier índole jurídica en los tribunales competentes.<br>
+           Diseñará, instrumentará, operará y  evaluará proyectos de investigación jurídica.<br>
+           Realizará diagnósticos y estudios de la  situación que guardan las actuales instituciones jurídicas y, en particular,  las estructuras y procesos de gobierno, proponiendo las reformas conducentes.<br>
+           Dominará al menos un segundo idioma.<br>
+           Conocerá el proceso para el  establecimiento de una empresa de cualquier tipo.</p>
+          </div>
+          <h1> Plan de Estudios</h1>
+          <p><img src="imagenes/25.png" width="773" height="922"></p>
+          <div>
+          
+          </div>
+         <div data-role="main" class="ui-content" align="center">
+<div style="width:50%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://archivo.de10.com.mx/13805.html" data-role="button">
+<h2>Universidad</h2>
+</a>
+</li>
+<BR>
+<BR>
+<BR>
+<li class="ui-first-child ui-last-child">
+<a href="http://www.cursosycarreras.com.mx/derecho-y-leyes-puebla-CZ-9-8926" data-role="button" >
+<h2>Mejores Universidaes</h2>
+</a>
+</li>
+<BR>
+<BR>
+<BR>
+<li class="ui-first-child ui-last-child">
+<a href="http://www.cursosycarreras.com.mx/turismo-puebla-CZ-88-8926" data-role="button" >
+<h2>UNIVERSIDAES EN PUEBLA</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+     <div data-role="collapsible" data-content-theme="false">
+        <h1>Imagen</h1>
+          <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','imagenes/13.png',1)"><img src="imagenes/12.png" width="496" height="252" id="Image2"></a></div>
+        </div>
+      </div>
+      
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Guia de carreras</h4>
+         <h4>Jaqueline Henández Romero </h4>
+      </div>
+</div>
+</div>
+<div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-add-back-btn-theme="b">
+           <h1>Otras Carreras</h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+         
+           <p>Abogacía<br>
+             Composición con Medios Electroacústicos<br>
+             Creatividad Educativa <br>
+             Criminalística<br>
+             Ciencias Antropológicas<br>
+             Ciencias biológicas<br>
+             Ciencias de la Atmósfera<br>
+             Ciencias de la Computación<br>
+             Ciencias de la Comunicación<br>
+             Ciencias de la Educación<br>
+             Ciencias Físicas<br>
+             Ciencias Geológicas<br>
+             Ciencias Matemáticas<br>
+             Ciencias Políticas<br>
+             Ciencias Químicas<br>
+             Ciencias Veterinarias<br>
+             Cine - Dirección Cinematográfica<br>
+             Cocinero<br>
+             Diseño Gráfico Multimedial<br>
+             Diseño Gráfico Publicitario<br>
+             Diseño Industrial<br>
+             Diseño Informático Editorial<br>
+             Diseño Multimedial<br>
+             Diseño Textil e Indumentaria</p>
+      </div>
+      <div>
+      <ul data-role="listview"  data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child  ui-last-child">
+         <a href="http://www.carrerasytrabajos.com.ar/carreras-lista/carreras-en-argentina-donde-estudiar-universidades.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Más Carreras</h2>      </a>
+         </li>
+         </ul>
+      </div>
+       <br>
+      <br>
+      <br>
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Carreras</h1>
+          <div></div>
+        </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Guia de carreras</h4>
+         <h4>Jaqueline Henández Romero <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','imagenes/27.jpeg',1)"><img src="imagenes/26.jpg" width="776" height="184" id="Image28"></a></h4>
+      </div>
+</div>
+   
+<div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-add-back-btn-theme="b">
+           <h1>Universidaes</h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+         
+           <p>Universidad de Oxford <br>
+             Instituto Tecnológico de California          <br>
+             Universidad de Stanford             <br>
+             Universidad de Cambridge<br>
+             Instituto de  Tecnología de Massachusetts         <br>
+             Universidad de Harvard               Estados  Unidos<br>
+             Universidad de Princeton           <br>
+             Imperial College de Londres      <br>
+             Instituto Federal de Tecnología Zurich (ETH)      <br>
+             Universidad de California, Berkeley       Universidad de Oxford (Reino Unido)<br>
+             Instituto de Tecnología de California (Estados Unidos)<br>
+             Universidad de Standford (Estados Unidos)<br>
+             Universidad de Cambridge (Reino Unido)<br>
+             Instituto Tecnológico de Massachusetts<br>
+             Universidad de Harvard (Estados Unidos)<br>
+             Universidad de Princeton (Estados Unidos)<br>
+             Escuela Imperial de Londres (Reino Unido)<br>
+             Escuela Politécnica Federal de Zurich (Suiza)<br>
+             Universidad de California, Berkeley (Estados Unidos)<br>
+             Universidad de Chicago (Estados Unidos)<br>
+             Universidad de Yale (Estados Unidos)<br>
+             Universidad de Pensilvania (Estados Unidos)<br>
+             Universidad de California, Los Angeles<br>
+             Universidad Colegio de Londres (Reino Unido)<br>
+             Universidad de Columbia (Estados Unidos)<br>
+             Universidad Johns Hopkins (Estados Unidos)<br>
+             Universidad de Duke (Estados Unidos)<br>
+             Universidad de Cornell (Estados Unidos)<br>
+           Universidad de Northwestern (Estados Unidos)</p>
+      </div>
+     <div>
+      <ul data-role="listview"  data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child  ui-last-child">
+         <a href="https://www.msn.com/es-ve/noticias/fotos/las-50-mejores-universidades-de-todo-el-mundo/ss-BBukzkT">
+            <h2>Más Universidaes</h2>      </a>
+         </li>
+         </ul>
+      </div>
+      <br>
+      <br>
+      <br>
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>la mejor Universidad</h1>
+          <div><img src="imagenes/28.jpg" width="87%" height="45%"></div>
+        </div>
+        <div>
+         <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/14.jpg" alt="14" title="14" id="wows1_0"/></li>
+		<li><img src="data1/images/15.png" alt="15" title="15" id="wows1_1"/></li>
+		<li><img src="data1/images/16.jpg" alt="16" title="16" id="wows1_2"/></li>
+		<li><img src="data1/images/17.jpg" alt="17" title="17" id="wows1_3"/></li>
+		<li><img src="data1/images/19.jpg" alt="19" title="19" id="wows1_4"/></li>
+		<li><img src="data1/images/20.png" alt="20" title="20" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/21.png" alt="wow slider" title="21" id="wows1_6"/></a></li>
+		<li><img src="data1/images/22.png" alt="22" title="22" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="14"><span><img src="data1/tooltips/14.jpg" alt="14"/>1</span></a>
+		<a href="#" title="15"><span><img src="data1/tooltips/15.png" alt="15"/>2</span></a>
+		<a href="#" title="16"><span><img src="data1/tooltips/16.jpg" alt="16"/>3</span></a>
+		<a href="#" title="17"><span><img src="data1/tooltips/17.jpg" alt="17"/>4</span></a>
+		<a href="#" title="19"><span><img src="data1/tooltips/19.jpg" alt="19"/>5</span></a>
+		<a href="#" title="20"><span><img src="data1/tooltips/20.png" alt="20"/>6</span></a>
+		<a href="#" title="21"><span><img src="data1/tooltips/21.png" alt="21"/>7</span></a>
+		<a href="#" title="22"><span><img src="data1/tooltips/22.png" alt="22"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+        </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Guia de carreras</h4>
+         <h4>Jaqueline Henández Romero </h4>
+      </div>
+</div>
+<div data-role="page" id="pagina6" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-add-back-btn-theme="b">
+           <h1>Datos del Desarrollador</h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+         
+         <h1>  <p>Nombre del deasrrollador:</p> </h1>
+           <h4><p>Jaqueline Hernández Romero</p></h4>
+           <h1> <p>Grupo:</p> </h1>
+           <h4><p>4&quot;G&quot;</p></h4>
+           <h1> <p>Submodulo:</p> </h1>
+          <h4> <p>Desarrolla Aplicaciones Móviles</p></h4>
+           <p>&nbsp;</p>
+       <h1><p> Nombre del Docente</p> </h1>
+       <h4> <p>Lic. José Antonio Gómez Hernández</p></h4> 
+      </div>
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Imagen del Desarrollador</h1>
+          <div><img src="imagenes/29.jpg" width="43%" height="36%"></div>
+        </div>
+  </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Guia de carreras</h4>
+         <h4>Jaqueline Henández Romero </h4>
+      </div>
+</div>
+   
+   
+</body>
+</html>
